@@ -20,7 +20,7 @@ body {
   text-align: center;
   background-color: #fff;
   color: #3d3d3d;
-  line-height: 1.7rem;
+  line-height: 1.7;
 }
 
 .container {
@@ -30,7 +30,7 @@ body {
 }
 
 section {
-  padding: 108px 0;
+  padding: 10.8rem 0;
 }
 
 .page-title {
@@ -42,7 +42,7 @@ section {
 .page-title::after {
   position: absolute;
   content: "";
-  bottom: 3rem;
+  bottom: 8rem;
   left: 50%;
   width: 10rem;
   height: 1rem;
