@@ -1,0 +1,55 @@
+<header class="splash">
+  <div class="splash-inner">
+    <i class="fas fa-crow"></i>
+    <h1 class="page-title">Hi, I'm Marek Miskowiec</h1>
+    <h2 class="page-subtitle">Hot Wheels & Diecast Collector</h2>
+  </div>
+</header>
+
+<style>
+  .splash {
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("/header-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  .splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .splash i {
+    font-size: 3rem;
+    background: var(--clr-main);
+    width: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    color: var(--clr-light);
+  }
+
+  @media (max-width: 750px) {
+    .page-title {
+      font-size: 4rem;
+    }
+    .page-subtitle {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 475px) {
+    .page-title {
+      font-size: 3rem;
+    }
+    .page-subtitle {
+      font-size: 1.25rem;
+    }
+  }
+</style>
