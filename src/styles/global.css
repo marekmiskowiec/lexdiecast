@@ -55,3 +55,44 @@ section {
   font-size: 2rem;
   margin: 5rem 0 0 0;
 }
+
+.section-title {
+  position: relative;
+  font-size: 3.6rem;
+  margin: 0 0 6rem 0;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  bottom: -1rem;
+  left: 50%;
+  width: 10rem;
+  height: 1rem;
+  transform: translateX(-50%);
+  background: var(--clr-main);
+}
+
+@media (max-width: 750px) {
+  .page-title {
+    font-size: 4rem;
+  }
+
+  .page-title::after {
+    bottom: 6rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .page-title {
+    font-size: 3rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.25rem;
+  }
+}
