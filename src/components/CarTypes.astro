@@ -1,0 +1,160 @@
+<section class="car-types">
+  <h2 class="section-title">What I Collect</h2>
+
+  <div class="car-type">
+    <div class="car-type__image">
+      <img
+        src="https://cdn.pixabay.com/photo/2016/05/18/10/52/buick-1400243_1280.jpg"
+        alt="Luzaki"
+      />
+    </div>
+    <div class="car-type__content">
+      <h3>Mainline - short card</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio atque
+        culpa delectus totam numquam rem rerum doloribus laborum sunt tempore
+        illum accusantium omnis, facilis consectetur adipisci officia assumenda
+        voluptatem deserunt.
+      </p>
+    </div>
+  </div>
+
+  <div class="car-type reverse">
+    <div class="car-type__image">
+      <img
+        src="https://cdn.pixabay.com/photo/2016/05/18/10/52/buick-1400243_1280.jpg"
+        alt="Luzaki"
+      />
+    </div>
+    <div class="car-type__content">
+      <h3>Mainline - long card</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ut
+        libero sint ab quod odio similique saepe dolorem nulla dolore qui iste
+        delectus veniam ad beatae eius, quis excepturi nemo.
+      </p>
+    </div>
+  </div>
+
+  <div class="car-type">
+    <div class="car-type__image">
+      <img
+        src="https://cdn.pixabay.com/photo/2016/05/18/10/52/buick-1400243_1280.jpg"
+        alt="Luzaki"
+      />
+    </div>
+    <div class="car-type__content">
+      <h3>Premium</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam aliquid
+        aperiam quisquam, maxime minima beatae atque enim sed, harum, ipsam aut
+        labore? Ad magnam cupiditate voluptatum. Totam labore saepe sunt.
+      </p>
+    </div>
+  </div>
+
+  <div class="car-type reverse">
+    <div class="car-type__image">
+      <img
+        src="https://cdn.pixabay.com/photo/2016/05/18/10/52/buick-1400243_1280.jpg"
+        alt="Luzaki"
+      />
+    </div>
+    <div class="car-type__content">
+      <h3>RLC</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, atque.
+        Facere sit natus quod consequuntur adipisci, repudiandae fugit ipsum,
+        autem maxime porro inventore ut nam eos? Consequatur quis sunt
+        excepturi?
+      </p>
+    </div>
+  </div>
+
+  <div class="car-type">
+    <div class="car-type__image">
+      <img
+        src="https://cdn.pixabay.com/photo/2016/05/18/10/52/buick-1400243_1280.jpg"
+        alt="Luzaki"
+      />
+    </div>
+    <div class="car-type__content">
+      <h3>Open</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatem
+        delectus dicta eos consectetur ipsa, aspernatur magnam sit? Quisquam
+        quam repellendus saepe quibusdam nemo doloremque. Quo eos molestias at
+        beatae.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .car-types {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+  }
+
+  .car-type {
+    display: flex;
+    align-items: center;
+
+    /* margin-bottom: 4rem; */
+  }
+
+  .car-type.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .car-type__image {
+    width: 50%;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .car-type__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 10px; */
+  }
+
+  .car-type__content {
+    width: 50%;
+  }
+
+  .car-type__content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .car-type__content p {
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* Hover dla zdjęć */
+  .car-type img:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+  }
+
+  /* Responsywność */
+  @media (max-width: 900px) {
+    .car-type,
+    .car-type.reverse {
+      flex-direction: column;
+    }
+
+    .car-type__image,
+    .car-type__content {
+      width: 100%;
+    }
+
+    .car-type__image {
+      height: 250px;
+    }
+  }
+</style>
