@@ -1,43 +1,116 @@
-# Astro Starter Kit: Minimal
+# LexDiecast Collector
 
-```sh
-npm create astro@latest -- --template minimal
+A website showcasing a collection of diecast car models. Built with Astro, offering fast and optimized user experience.
+
+## 🚗 About the Project
+
+LexDiecast Collector is a showcase website for a diecast car collection, containing over 1000 models in stock. The site presents different types of models, a photo gallery, and information about the collection.
+
+## ✨ Features
+
+- **Header** - Hero section with main title and background
+- **Intro** - Introduction to the collection
+- **About** - About section
+- **CarTypes** - Presentation of different model types (Mainline, Premium, etc.)
+- **Gallery** - Photo gallery of models
+- **Footer** - Site footer
+
+## 🛠️ Technologies
+
+- [Astro](https://astro.build) - Framework for building fast websites
+- HTML/CSS - Styling and structure
+- Font Awesome - Icons
+
+## 📦 Installation
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd lexdiecast
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+2. Install dependencies:
 
-## 🚀 Project Structure
+```bash
+npm install
+```
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🚀 Getting Started
 
-```text
+### Development Mode
+
+Run the development server on `localhost:4321`:
+
+```bash
+npm run dev
+```
+
+### Production Build
+
+Build the project to the `./dist/` folder:
+
+```bash
+npm run build
+```
+
+### Preview Build
+
+Preview the built version locally before deployment:
+
+```bash
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
 /
-├── public/
+├── public/              # Static files (images, favicon)
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/      # Astro components
+│   │   ├── Header.astro
+│   │   ├── Intro.astro
+│   │   ├── About.astro
+│   │   ├── CarTypes.astro
+│   │   ├── Gallery.astro
+│   │   └── Footer.astro
+│   ├── layouts/         # Page layouts
+│   │   └── BasicLayout.astro
+│   ├── pages/           # Pages (routing)
+│   │   └── index.astro
+│   └── styles/          # Global styles
+│       └── global.css
+├── astro.config.mjs     # Astro configuration
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🎨 Styling
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+The project uses CSS variables to manage colors and styles. Main styles are located in `src/styles/global.css`, and each component can have its own styles in the `<style>` section.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 📝 npm Scripts
 
-## 🧞 Commands
+| Command             | Action                   |
+| :------------------ | :----------------------- |
+| `npm install`       | Install dependencies     |
+| `npm run dev`       | Start development server |
+| `npm run build`     | Build production project |
+| `npm run preview`   | Preview built version    |
+| `npm run astro ...` | Run Astro CLI commands   |
 
-All commands are run from the root of the project, from a terminal:
+## 🔧 Configuration
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Astro configuration is located in the `astro.config.mjs` file. You can adjust project settings there according to your needs.
 
-## 👀 Want to learn more?
+## 📄 License
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This project is private property.
+
+## 👤 Author
+
+LexDiecast Collector
+
+---
+
+For more information about Astro, check out the [documentation](https://docs.astro.build) or join the [Discord](https://astro.build/chat).
